@@ -635,7 +635,7 @@ SIM.UI = {
         localStorage.spelldamage = view.fight.find('input[name="spelldamage"]').val();
         localStorage.batching = view.fight.find('select[name="batching"]').val();
 
-        let _buffs = [], _rotation = [], _talents = [], _sources = [], _phases = [], _gear = {}, _enchant = {};
+        let _buffs = [], _rotation = [], _talents = [], _sources = [], _phases = [], _gear = {}, _enchant = {}, _resistance = {};
         view.buffs.find('.active').each(function () { _buffs.push($(this).attr('data-id')); });
         view.filter.find('.sources .active').each(function () { _sources.push($(this).attr('data-id')); });
         view.filter.find('.phases .active').each(function () { _phases.push($(this).attr('data-id')); });
@@ -671,6 +671,12 @@ SIM.UI = {
             }
         }
 
+        var resistances = ['shadow', 'arcane', 'nature', 'fire', 'frost'];
+        for (let resist in resistances) {
+            var element = resistances[resist];
+            _resistance[element] = $(".resistances[data-id='"+element+"-resist']").prop("checked");
+        }
+
         localStorage.buffs = JSON.stringify(_buffs);
         localStorage.rotation = JSON.stringify(_rotation);
         localStorage.sources = JSON.stringify(_sources);
@@ -678,12 +684,7 @@ SIM.UI = {
         localStorage.talents = JSON.stringify(_talents);
         localStorage.gear = JSON.stringify(_gear);
         localStorage.enchant = JSON.stringify(_enchant);
-
-        // set resistances back up to they were before refresh
-        //var $toggleEle = $(".toggle-js active");
-        //console.log($toggleEle);
-        //var toToggleEle = $toggleEle.getAttribute('data-id');
-        //$("."+toToggleEle).toggleClass('hidden');
+        localStorage.resistances = JSON.stringify(_resistance);
     },
 
     loadSession: function () {
@@ -704,6 +705,7 @@ SIM.UI = {
             rotation: !localStorage.rotation ? JSON.parse(session.rotation) : JSON.parse(localStorage.rotation),
             gear: !localStorage.gear ? JSON.parse(session.gear) : JSON.parse(localStorage.gear),
             enchant: !localStorage.enchant ? JSON.parse(session.enchant) : JSON.parse(localStorage.enchant),
+            resistances: !localStorage.resistances ? JSON.parse(session.resistances) : JSON.parse(localStorage.resistances),
         });
 
         let _sources = !localStorage.sources ? JSON.parse(session.sources) : JSON.parse(localStorage.sources);
