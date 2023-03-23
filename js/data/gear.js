@@ -1035,7 +1035,10 @@ var gear = {
          "ac": 53,
          "source": "Nerubian",
          "phase": 7,
-         "id": 51733
+         "id": 51733,
+         "resist": {
+            "shadow": 10,
+         },
       },
       {
          "name": "Shawl of Haunted Memories",
@@ -2529,7 +2532,11 @@ var gear = {
          "type": "Fist",
          "source": "MC",
          "phase": 7,
-         "id": 81265
+         "id": 81265,
+         "resist": {
+            "fire": 10,
+            "shadow": 5,
+         },
       },
       {
          "name": "Girdle of Hope (vs Undead)",
@@ -8853,6 +8860,15 @@ var enchant = {
          "agi": 3,
          "phase": 1
       },
+      {
+         "id": 13525,
+         "spellid": true,
+         "name": "Lesser Shadow Resist",
+         "resist": {
+            "shadow": 10,
+         },
+         "phase": 1
+      }
    ],
    "chest": [
       {
