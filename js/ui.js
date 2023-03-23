@@ -705,7 +705,7 @@ SIM.UI = {
             rotation: !localStorage.rotation ? JSON.parse(session.rotation) : JSON.parse(localStorage.rotation),
             gear: !localStorage.gear ? JSON.parse(session.gear) : JSON.parse(localStorage.gear),
             enchant: !localStorage.enchant ? JSON.parse(session.enchant) : JSON.parse(localStorage.enchant),
-            resistances: !localStorage.resistances ? JSON.parse(session.resistances) : JSON.parse(localStorage.resistances),
+            resistances: !localStorage.resistances ? null : JSON.parse(localStorage.resistances),
         });
 
         let _sources = !localStorage.sources ? JSON.parse(session.sources) : JSON.parse(localStorage.sources);
@@ -718,6 +718,14 @@ SIM.UI = {
             view.filter.find(`.phases [data-id="${i}"]`).addClass('active');
 
         if (!localStorage.version || parseInt(localStorage.version) < version) view.newVersion();
+
+        var resistances = ['shadow', 'arcane', 'nature', 'fire', 'frost'];
+        for (let resist in resistances) {
+            var element = resistances[resist];
+            if ( $(".resistances[data-id='"+element+"-resist']").prop("checked") ) {
+                view.sidebar.find("."+element+"-resist.hidden").removeClass('hidden');
+            }
+        }
     },
 
     filterGear: function () {
@@ -782,6 +790,9 @@ SIM.UI = {
             let source = item.source.toLowerCase(), phase = item.phase;
             if (item.source == 'Lethon' || item.source == 'Emeriss' || item.source == 'Kazzak' || item.source == 'Azuregos' || item.source == 'Ysondre' || item.source == 'Taerar' || item.source == 'Green Dragons' || item.source == 'Nerubian' || item.source == 'Dark Reaver' || item.source == 'Concavius' || item.source == 'Ostarius')
                 source = 'worldboss';
+
+            if (item.subsource == 'shadow' || item.subsource == 'arcane' || item.subsource == 'nature' || item.subsource == 'fire' || item.subsource == 'frost')
+                source = 'resistances-list';
 
             if (phase && !view.filter.find('.phases [data-id="' + phase + '"]').hasClass('active'))
                 continue;
@@ -898,6 +909,9 @@ SIM.UI = {
             if (item.source == 'Lethon' || item.source == 'Emeriss' || item.source == 'Kazzak' || item.source == 'Azuregos' || item.source == 'Ysondre' || item.source == 'Taerar' || item.source == 'Green Dragons' || item.source == 'Nerubian' || item.source == 'Dark Reaver' || item.source == 'Concavius' || item.source == 'Ostarius')
                 source = 'worldboss';
 
+            if (item.subsource == 'shadow' || item.subsource == 'arcane' || item.subsource == 'nature' || item.subsource == 'fire' || item.subsource == 'frost')
+                source = 'resistances-list';
+
             if (max == 2 &&
                 ((phase && !view.filter.find('.phases [data-id="' + phase + '"]').hasClass('active')) ||
                 (source && !view.filter.find('.sources [data-id="' + source + '"]').hasClass('active'))))
@@ -905,8 +919,12 @@ SIM.UI = {
 
             if (phase && !view.filter.find('.phases [data-id="' + phase + '"]').hasClass('active'))
                 continue;
-            if (source && !view.filter.find('.sources [data-id="' + source + '"]').hasClass('active'))
+            if (source && !view.filter.find('.sources [data-id="' + source + '"]').hasClass('active')) {
+                if (source === 'resistances-list' && !$(".resistances[data-id='"+item.subsource+"-resist']").prop("checked")) {
+                    continue;
+                }
                 continue;
+            }
 
             if (item.hidden && !editmode) continue;
 

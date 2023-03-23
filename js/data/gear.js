@@ -1,6 +1,58 @@
 var gear = {
    "head": [
       {
+         "name": "Polar Helmet",
+         "source": "Naxx",
+         "subsource": "frost",
+         "ac": 196,
+         "sta": 24,
+         "agi": 18,
+         "resist": {
+             "frost": 44,
+         },
+         "phase": 6,
+         "id": 23020,
+      },
+      {
+         "name": "Icy Scale Coif",
+         "source": "Naxx",
+         "subsource": "frost",
+         "ac": 425,
+         "sta": 24,
+         "agi": 18,
+         "resist": {
+             "frost": 44,
+         },
+         "phase": 6,
+         "id": 23033,
+      },
+      {
+         "name": "Icebane Helmet",
+         "source": "Naxx",
+         "subsource": "frost",
+         "ac": 757,
+         "sta": 24,
+         "str": 12,
+         "defense": 8,
+         "resist": {
+             "frost": 44,
+         },
+         "phase": 6,
+         "id": 23019,
+      },
+      {
+         "name": "Bramblewood Helm",
+         "source": "Crafting",
+         "subsource": "nature",
+         "ac": 156,
+         "sta": 20,
+         "resist": {
+             "nature": 30,
+         },
+         "phase": 5,
+         "id": 22759,
+      },
+      {
          "name": "Blindfold of the Scarlet Marksman",
          "agi": 30,
          "sta": 16,
@@ -352,6 +404,10 @@ var gear = {
          "sta": 40,
          "defense": 11,
          "ac": 696,
+         "resist": {
+             "frost": 10,
+             "shadow": 10,
+         },
          "source": "Onyxia",
          "phase": 1,
          "id": 16963
@@ -450,6 +506,28 @@ var gear = {
       }
    ],
    "neck": [
+      {
+         "name": "Tempestria's Frozen Necklace",
+         "source": "Other",
+         "subsource": "frost",
+         "sta": 8,
+         "resist": {
+             "frost": 15,
+         },
+         "phase": "1",
+         "id": 18678,
+      },
+      {
+         "name": "Touch of Frost",
+         "source": "Naxx",
+         "subsource": "frost",
+         "sta": 20,
+         "resist": {
+             "frost": 24,
+         },
+         "phase": "6",
+         "id": 22935,
+      },
       {
          "name": "Voidclaw Choker",
          "str": 14,
@@ -671,6 +749,67 @@ var gear = {
       }
    ],
    "shoulder": [
+      {
+         "name": "Icebane Pauldrons",
+         "source": "Naxx",
+         "subsource": "frost",
+         "sta": 18,
+         "str": 9,
+         "ac": 698,
+         "defense": 7,
+         "resist": {
+             "frost": 33,
+         },
+         "phase": "6",
+         "id": 22940,
+      },
+      {
+         "name": "Icy Scale Spaulders",
+         "source": "Naxx",
+         "subsource": "frost",
+         "sta": 25,
+         "ac": 393,
+         "resist": {
+             "frost": 33,
+         },
+         "phase": "6",
+         "id": 22967,
+      },
+      {
+         "name": "Polar Shoulder Pads",
+         "source": "Naxx",
+         "subsource": "frost",
+         "sta": 25,
+         "ac": 181,
+         "resist": {
+             "frost": 33,
+         },
+         "phase": "6",
+         "id": 22941,
+      },
+      {
+         "name": "Acid-etched Pauldrons",
+         "source": "Dungeon",
+         "subsource": "nature",
+         "ac": 434,
+         "resist": {
+             "nature": 20,
+         },
+         "phase": "1",
+         "id": 13533,
+      },
+      {
+         "name": "Sylvan Shoulders",
+         "source": "Crafting",
+         "subsource": "nature",
+         "sta": 18,
+         "ac": 74,
+         "resist": {
+             "nature": 20,
+         },
+         "phase": "5",
+         "id": 22758,
+      },
       {
          "name": "Bloody Gladiator's Shoulders",
          "str": 14,
@@ -989,6 +1128,42 @@ var gear = {
    ],
    "back": [
       {
+         "name": "Icy Cloak",
+         "source": "Onyxia",
+         "subsource": "frost",
+         "sta": 10,
+         "ac": 55,
+         "resist": {
+             "frost": 6,
+             "arcane": 6,
+         },
+         "phase": 1,
+         "id": 17078,
+      },
+      {
+         "name": "Icy Cloak",
+         "source": "Crafting",
+         "subsource": "frost",
+         "ac": 29,
+         "resist": {
+             "frost": 11,
+         },
+         "phase": 1,
+         "id": 4327,
+      },
+      {
+         "name": "Glacial Cloak",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 18,
+         "ac": 61,
+         "resist": {
+             "frost": 24,
+         },
+         "phase": 6,
+         "id": 22658,
+      },
+      {
          "name": "Sandstalker's Shroud",
          "sta": 12,
          "agi": 22,
@@ -1283,9 +1458,109 @@ var gear = {
          "source": "Dungeon",
          "phase": 1,
          "id": 22337
-      }
+      },
+      {
+         "name": "Grovekeeper's Drape",
+         "sta": 12,
+         "source": "Dungeon",
+         "subsource": "nature",
+         "phase": 1,
+         "id": 17739
+      },
    ],
    "chest": [
+      {
+         "name": "Ice Scale Breastplate",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 24,
+         "ac": 506,
+         "ap": 40,
+         "resist": {
+             "frost": 40,
+         },
+         "phase": "6",
+         "id": 22664,
+      },
+      {
+         "name": "Icebane Breastplate",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 24,
+         "str": 12,
+         "ac": 899,
+         "defense": 8,
+         "resist": {
+             "frost": 42,
+         },
+         "phase": "6",
+         "id": 22669,
+      },
+      {
+         "name": "Thorium Armor",
+         "source": "Crafting",
+         "subsource": "frost",
+         "ac": 480,
+         "resist": {
+             "shadow": 8,
+             "arcane": 8,
+             "nature": 8,
+             "fire": 8,
+             "frost": 8,
+         },
+         "phase": "1",
+         "id": 12405,
+      },
+      {
+         "name": "Brightcloth Robe",
+         "source": "Crafting",
+         "subsource": "frost",
+         "ac": 70,
+         "resist": {
+             "shadow": 15,
+             "frost": 16,
+         },
+         "phase": "1",
+         "id": 14100,
+      },
+      {
+         "name": "Polar Tunic",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 26,
+         "agi": 18,
+         "ac": 234,
+         "resist": {
+             "frost": 40,
+         },
+         "phase": "6",
+         "id": 22661,
+      },
+      {
+         "name": "Ironvine Breastplate",
+         "source": "Crafting",
+         "subsource": "nature",
+         "sta": 15,
+         "ac": 726,
+         "defense": 7,
+         "resist": {
+             "nature": 30,
+         },
+         "phase": "5",
+         "id": 22762,
+      },
+      {
+         "name": "Sandstalker Breastplate",
+         "source": "Crafting",
+         "subsource": "nature",
+         "sta": 13,
+         "ac": 485,
+         "resist": {
+             "nature": 25,
+         },
+         "phase": "5",
+         "id": 20478,
+      },
       {
          "name": "Earthguard Tunic",
          "agi": 10,
@@ -1746,6 +2021,70 @@ var gear = {
    ],
    "wrist": [
       {
+         "name": "Polar Bracer",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 20,
+         "agi": 12,
+         "ac": 102,
+         "resist": {
+             "frost": 20,
+         },
+         "phase": "6",
+         "id": 22663,
+      },
+      {
+         "name": "Icy Scale Bracers",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 17,
+         "ap": 32,
+         "ac": 221,
+         "resist": {
+             "frost": 20,
+         },
+         "phase": "6",
+         "id": 22665,
+      },
+      {
+         "name": "Icebane Bracers",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 13,
+         "str": 6,
+         "ac": 393,
+         "defense": 5,
+         "resist": {
+             "frost": 24,
+         },
+         "phase": "6",
+         "id": 22671,
+      },
+      {
+         "name": "Sandstalker Bracer",
+         "source": "Crafting",
+         "subsource": "nature",
+         "sta": 7,
+         "ac": 220,
+         "resist": {
+             "nature": 15,
+         },
+         "phase": "5",
+         "id": 20476,
+      },
+      {
+         "name": "Noxxion's Shackles",
+         "source": "Dungeon",
+         "subsource": "nature",
+         "sta": 5,
+         "ac": 235,
+         "resist": {
+             "nature": 15,
+         },
+         "phase": "5",
+         "id": 17746,
+      },
+      {
          "name": "Sanctum Bark Wraps",
          "agi": 17,
          "str": 6,
@@ -2024,6 +2363,71 @@ var gear = {
       }
    ],
    "hands": [
+      {
+         "name": "Polar Gloves",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 18,
+         "agi": 18,
+         "ac": 146,
+         "resist": {
+             "frost": 30,
+         },
+         "phase": 6,
+         "id": 22662,
+      },
+      {
+         "name": "Icy Scale Gauntlets",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 22,
+         "ap": 22,
+         "ac": 316,
+         "resist": {
+             "frost": 30,
+         },
+         "phase": 6,
+         "id": 22666,
+      },
+      {
+         "name": "Icebane Gauntlets",
+         "source": "Crafting",
+         "subsource": "frost",
+         "sta": 18,
+         "str": 9,
+         "ac": 562,
+         "defense":5,
+         "resist": {
+             "frost": 32,
+         },
+         "phase": 6,
+         "id": 22670,
+      },
+      {
+         "name": "Sandstalker Gauntlets",
+         "source": "Crafting",
+         "subsource": "nature",
+         "sta": 9,
+         "ac": 308,
+         "resist": {
+             "nature": 20,
+         },
+         "phase": 5,
+         "id": 20477,
+      },
+      {
+         "name": "Ironvine Gloves",
+         "source": "Crafting",
+         "subsource": "nature",
+         "sta": 10,
+         "ac": 454,
+         "defense": 10,
+         "resist": {
+             "nature": 20,
+         },
+         "phase": "5",
+         "id": 22763,
+      },
       {
          "name": "Fists of the Red Dawn",
          "str": 22,
@@ -2398,6 +2802,34 @@ var gear = {
       }
    ],
    "waist": [
+      {
+         "name": "Unmelting Ice Girdle",
+         "source": "Azuregos",
+         "subsource": "frost",
+         "sta": 14,
+         "str": 14,
+         "agi": 14,
+         "ac": 452,
+         "defense": 8,
+         "resist": {
+             "frost": 16,
+         },
+         "phase": "2",
+         "id": 18547,
+      },
+      {
+         "name": "Ironvine Belt",
+         "source": "Crafting",
+         "subsource": "nature",
+         "sta": 12,
+         "ac": 408,
+         "defense": 3,
+         "resist": {
+             "nature": 15,
+         },
+         "phase": "5",
+         "id": 22764,
+      },
       {
          "name": "Girdle of the Insane Zealot",
          "crit": 2,
@@ -2797,6 +3229,59 @@ var gear = {
       }
    ],
    "legs": [
+      {
+         "name": "Polar Leggings",
+         "source": "Quest",
+         "subsource": "frost",
+         "sta": 28,
+         "agi": 15,
+         "ac": 205,
+         "resist": {
+             "frost": 40,
+         },
+         "phase": "6",
+         "id": 22701,
+      },
+      {
+         "name": "Icy Scale Leggings",
+         "source": "Quest",
+         "subsource": "frost",
+         "sta": 28,
+         "agi": 15,
+         "ac": 443,
+         "resist": {
+             "frost": 40,
+         },
+         "phase": "6",
+         "id": 22702,
+      },
+      {
+         "name": "Icebane Leggings",
+         "source": "Quest",
+         "subsource": "frost",
+         "sta": 25,
+         "str": 10,
+         "ac": 787,
+         "defense": 6,
+         "resist": {
+             "frost": 40,
+         },
+         "phase": "6",
+         "id": 22702,
+      },
+      {
+         "name": "Cenarion Reservist's Legplates",
+         "source": "Quest",
+         "subsource": "nature",
+         "sta": 13,
+         "ac": 575,
+         "defense": 9,
+         "resist": {
+             "nature": 25,
+         },
+         "phase": "5",
+         "id": 20699,
+      },
       {
          "name": "Flamewrath Leggings",
          "str": 25,
@@ -3546,6 +4031,40 @@ var gear = {
    ],
    "finger1": [
       {
+         "name": "Band of Icy Depths",
+         "source": "Quest",
+         "subsource": "frost",
+         "sta": 19,
+         "resist": {
+             "frost": 20,
+         },
+         "phase": 5,
+         "id": 21526,
+      },
+      {
+         "name": "Hailstone Band",
+         "source": "Naxx",
+         "subsource": "frost",
+         "sta": 18,
+         "dodge": 1,
+         "resist": {
+             "frost": 20,
+         },
+         "phase": 6,
+         "id": 23028,
+      },
+      {
+         "name": "Ramaladni's Icy Grasp",
+         "source": "Quest",
+         "subsource": "frost",
+         "sta": 15,
+         "resist": {
+             "frost": 25,
+         },
+         "phase": 6,
+         "id": 22707,
+      },
+      {
          "name": "Ring of Tyvadrius",
          "agi": 18,
          "sta": 5,
@@ -4117,6 +4636,51 @@ var gear = {
       }
    ],
    "trinket1": [
+      {
+         "name": "Loatheb's Reflection",
+         "source": "Naxx",
+         "subsource": "frost",
+         "resist": {
+             "shadow": 13,
+             "arcane": 13,
+             "nature": 13,
+             "fire": 13,
+             "frost": 13,
+         },
+         "phase": "6",
+         "id": 23042,
+      },
+      {
+         "name": "Gyrofreeze Ice Reflector",
+         "source": "Crafting",
+         "subsource": "frost",
+         "resist": {
+             "frost": 15,
+         },
+         "phase": "1",
+         "id": 18634,
+      },
+      {
+         "name": "Stormpike Insignia Rank 6",
+         "source": "PVP",
+         "subsource": "frost",
+         "dodge": 2,
+         "resist": {
+             "frost": 10,
+         },
+         "phase": "3",
+         "id": 17904,
+      },
+      {
+         "name": "Heart of Noxxion",
+         "source": "Dungeon",
+         "subsource": "nature",
+         "resist": {
+             "nature": 10,
+         },
+         "phase": "1",
+         "id": 17744,
+      },
       {
          "name": "The Heart of Dreams",
          "haste": 2,
@@ -8811,6 +9375,16 @@ var gear = {
 var enchant = {
    "head": [
       {
+         "name": "Ice Guard",
+         "source": "Quest",
+         "subsource": "frost",
+         "resist": {
+             "frost": 10,
+         },
+         "phase": "6",
+         "id": 22636,
+      },
+      {
          "id": 18329,
          "name": "Arcanum of Rapidity",
          "haste": 1,
@@ -8831,6 +9405,26 @@ var enchant = {
    ],
    "shoulder": [
       {
+         "name": "Frost Mantle of the Dawn",
+         "source": "Quest",
+         "subsource": "frost",
+         "resist": {
+             "frost": 5,
+         },
+         "phase": "1",
+         "id": 18170,
+      },
+      {
+         "name": "Nature Mantle of the Dawn",
+         "source": "Quest",
+         "subsource": "nature",
+         "resist": {
+             "nature": 5,
+         },
+         "phase": "1",
+         "id": 18172,
+      },
+      {
          "id": 29483,
          "spellid": true,
          "name": "Might of the Scourge",
@@ -8847,6 +9441,40 @@ var enchant = {
       },
    ],
    "back": [
+      {
+         "name": "Greater Fire Resistance",
+         "source": "Quest",
+         "subsource": "fire",
+         "resist": {
+             "fire": 15,
+         },
+         "phase": 4,
+         "id": 25081,
+      },
+      {
+         "name": "Greater Nature Resistance",
+         "source": "Quest",
+         "subsource": "nature",
+         "resist": {
+             "nature": 15,
+         },
+         "phase": 4,
+         "id": 25082,
+      },
+      {
+         "name": "Greater Resistance",
+         "source": "Quest",
+         "subsource": "frost",
+         "resist": {
+             "shadow": 5,
+             "arcane": 5,
+             "nature": 5,
+             "fire": 5,
+             "frost": 5,
+         },
+         "phase": 1,
+         "id": 20014,
+      },
       {
          "id": 25084,
          "spellid": true,
@@ -8943,6 +9571,16 @@ var enchant = {
       },
    ],
    "legs": [
+      {
+         "name": "Ice Guard",
+         "source": "Quest",
+         "subsource": "frost",
+         "resist": {
+             "frost": 10,
+         },
+         "phase": "6",
+         "id": 22636,
+      },
       {
          "id": 18329,
          "name": "Arcanum of Rapidity",
