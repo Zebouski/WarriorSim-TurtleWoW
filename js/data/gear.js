@@ -7213,6 +7213,10 @@ var gear = {
          "speed": 1.9,
          "type": "Sword",
          "source": "MC",
+         "resist": {
+             "fire": 8,
+             "nature": 9,
+         },
          "ppm": 7.2,
          "phase": 3,
          "id": 19019,
@@ -8456,6 +8460,10 @@ var gear = {
          "speed": 1.9,
          "type": "Sword",
          "source": "MC",
+         "resist": {
+             "fire": 8,
+             "nature": 9,
+         },
          "ppm": 6,
          "phase": 3,
          "id": 19019,
