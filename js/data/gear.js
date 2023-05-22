@@ -16,7 +16,6 @@ var gear = {
          "agi": 14,
          "str": 14,
          "sta": 14,
-         "crit": 1,
          "hit": 1,
          "ac": 163,
          "source": "Crafting",
@@ -988,6 +987,15 @@ var gear = {
       }
    ],
    "back": [
+      {
+         "name": "Pelt of the Great Howler",
+         "str": 22,
+         "hit": 1,
+         "ac": 51,
+         "source": "Unknown",
+         "phase": 7,
+         "id": 61249,
+      },
       {
          "name": "Sandstalker's Shroud",
          "sta": 12,
@@ -2791,11 +2799,21 @@ var gear = {
    ],
    "legs": [
       {
+         "name": "Ancient Jade Leggings",
+         "str": 21,
+         "skill": 8,
+         "type": "Mace",
+         "crit": 1,
+         "ac": 408,
+         "source": "EmerSanc",
+         "phase": 7,
+         "id": 61239,
+      },
+      {
          "name": "Flamewrath Leggings",
          "str": 25,
          "agi": 18,
          "sta": 18,
-         "crit": 1,
          "hit": 1,
          "ac": 175,
          "source": "Crafting",
@@ -3176,6 +3194,16 @@ var gear = {
    ],
    "feet": [
       {
+         "name": "Sabatons of the Endless March",
+         "str": 20,
+         "sta": 20,
+         "arp": 50,
+         "ac": 515,
+         "source": "Unknown",
+         "phase": 7,
+         "id": 61246,
+      },
+      {
          "name": "Sternrock Trudgers",
          "agi": 16,
          "sta": 8,
@@ -3187,7 +3215,7 @@ var gear = {
       },
       {
          "name": "Windwalker Boots",
-         "agi": 22,
+         "agi": 20,
          "sta": 10,
          "haste": 2,
          "ac": 138,
