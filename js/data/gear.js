@@ -10,7 +10,7 @@ var gear = {
              "fire": 35,
          },
          "phase": 1,
-         "id": 133124,
+         "id": 19148,
       },
       {
          "name": "Gyth's Skull",
@@ -27,7 +27,7 @@ var gear = {
              "shadow": 15,
          },
          "phase": 1,
-         "id": 133125,
+         "id": 12952,
       },
       {
          "name": "Polar Helmet",
@@ -543,7 +543,7 @@ var gear = {
              "fire": 20,
          },
          "phase": 1,
-         "id": 133444,
+         "id": 16309,
       },
       {
          "name": "Tempestria's Frozen Necklace",
@@ -801,7 +801,7 @@ var gear = {
              "fire": 22,
          },
          "phase": 1,
-         "id": 135054,
+         "id": 19139,
       },
       {
          "name": "Volcanic Shoulders",
@@ -812,7 +812,7 @@ var gear = {
              "fire": 18,
          },
          "phase": 1,
-         "id": 135044,
+         "id": 15055,
       },
       {
          "name": "Icebane Pauldrons",
@@ -1201,7 +1201,7 @@ var gear = {
              "fire": 20,
          },
          "phase": 1,
-         "id": 132657,
+         "id": 12905,
       },
       {
          "name": "Icy Cloak",
@@ -1570,7 +1570,7 @@ var gear = {
              "fire": 15,
          },
          "phase": 1,
-         "id": 132744,
+         "id": 12895,
       },
       {
          "name": "Volcanic Breastplate",
@@ -1581,7 +1581,7 @@ var gear = {
              "fire": 20,
          },
          "phase": 1,
-         "id": 132722,
+         "id": 15053,
       },
       {
          "name": "Ice Scale Breastplate",
@@ -2144,7 +2144,7 @@ var gear = {
              "fire": 18,
          },
          "phase": 1,
-         "id": 132606,
+         "id": 17014,
       },
       {
          "name": "Emberplate Armguards of the Bear",
@@ -2157,7 +2157,7 @@ var gear = {
              "fire": 10,
          },
          "phase": 1,
-         "id": 132617,
+         "id": 11767,
       },
       {
          "name": "Emberplate Armguards of the Tiger",
@@ -2170,7 +2170,7 @@ var gear = {
              "fire": 10,
          },
          "phase": 1,
-         "id": 132617,
+         "id": 11767,
       },
       {
          "name": "Polar Bracer",
@@ -2526,7 +2526,7 @@ var gear = {
              "fire": 28,
          },
          "phase": 1,
-         "id": 132956,
+         "id": 19164,
       },
       {
          "name": "Molten Fists",
@@ -2540,7 +2540,7 @@ var gear = {
              "fire": 10,
          },
          "phase": 1,
-         "id": 132938,
+         "id": 11814,
       },
       {
          "name": "Polar Gloves",
@@ -2992,7 +2992,7 @@ var gear = {
              "fire": 12,
          },
          "phase": 1,
-         "id": 132502,
+         "id": 19163,
       },
       {
          "name": "Flamescarred Girdle",
@@ -3003,7 +3003,7 @@ var gear = {
              "fire": 20,
          },
          "phase": 1,
-         "id": 132498,
+         "id": 13526,
       },
       {
          "name": "Frostbite Girdle",
@@ -3461,7 +3461,7 @@ var gear = {
              "fire": 35,
          },
          "phase": 1,
-         "id": 134669,
+         "id": 19433,
       },
       {
          "name": "Dark Iron Leggings",
@@ -3473,7 +3473,7 @@ var gear = {
              "fire": 30,
          },
          "phase": 1,
-         "id": 134584,
+         "id": 17013,
       },
       {
          "name": "Volcanic Leggings",
@@ -3484,7 +3484,7 @@ var gear = {
              "fire": 20,
          },
          "phase": 1,
-         "id": 134586,
+         "id": 15054,
       },
       {
          "name": "Polar Leggings",
@@ -3945,7 +3945,7 @@ var gear = {
              "fire": 24,
          },
          "phase": 1,
-         "id": 132541,
+         "id": 16982,
       },
       {
          "name": "Dark Iron Boots of the Monkey",
@@ -3958,7 +3958,7 @@ var gear = {
              "fire": 28,
          },
          "phase": 1,
-         "id": 132551,
+         "id": 20039,
       },
       {
          "name": "Dark Iron Boots of the Bear",
@@ -3971,7 +3971,7 @@ var gear = {
              "fire": 28,
          },
          "phase": 1,
-         "id": 132551,
+         "id": 20039,
       },
       {
          "name": "Dark Iron Boots of the Tiger",
@@ -3984,7 +3984,7 @@ var gear = {
              "fire": 28,
          },
          "phase": 1,
-         "id": 132551,
+         "id": 20039,
       },
       {
          "name": "Lavawalker Greaves",
@@ -3995,7 +3995,7 @@ var gear = {
              "fire": 20,
          },
          "phase": 1,
-         "id": 132590,
+         "id": 13527,
       },
       {
          "name": "Flame Walkers",
@@ -4008,7 +4008,7 @@ var gear = {
              "fire": 18,
          },
          "phase": 1,
-         "id": 132536,
+         "id": 18047,
       },
       {
          "name": "Sabatons of the Endless March",
@@ -4391,7 +4391,7 @@ var gear = {
              "fire": 20,
          },
          "phase": 1,
-         "id": 133351,
+         "id": 12017,
       },
       {
          "name": "Band of Icy Depths",
@@ -5007,7 +5007,7 @@ var gear = {
              "fire": 15,
          },
          "phase": "1",
-         "id": 133434,
+         "id": 2802,
       },
       {
          "name": "Loatheb's Reflection",
@@ -5478,6 +5478,10 @@ var gear = {
       {
          "name": "Bow of Taut Sinew",
          "ap": 22,
+         "resist": {
+             "nature": 8,
+         },
+         "subsource": "nature",
          "source": "AQ20",
          "phase": "5",
          "id": 21478
@@ -5632,6 +5636,10 @@ var gear = {
          "name": "Polished Ironwood Crossbow",
          "sta": 6,
          "ap": 26,
+         "resist": {
+             "nature": 7,
+         },
+         "subsource": "nature",
          "source": "Emeriss",
          "phase": "4",
          "id": 20599

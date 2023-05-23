@@ -919,10 +919,12 @@ SIM.UI = {
 
             if (phase && !view.filter.find('.phases [data-id="' + phase + '"]').hasClass('active'))
                 continue;
+
+            if (source === 'resistances-list' && !$(".resistances[data-id='"+item.subsource+"-resist']").prop("checked")) {
+                continue;
+            }
+
             if (source && !view.filter.find('.sources [data-id="' + source + '"]').hasClass('active')) {
-                if (source === 'resistances-list' && !$(".resistances[data-id='"+item.subsource+"-resist']").prop("checked")) {
-                    continue;
-                }
                 continue;
             }
 

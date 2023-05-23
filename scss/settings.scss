@@ -148,7 +148,9 @@
             cursor: pointer;
             margin-bottom: 4px;
             min-height: 38px;
-
+            &.hidden {
+                display: none;
+            }
             &:before {
                 content: '';
                 width: 16px;
