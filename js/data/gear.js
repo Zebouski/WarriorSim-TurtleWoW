@@ -1,6 +1,18 @@
 var gear = {
    "head": [
       {
+         "name": "Darkflame Helm",
+         "str": 18,
+         "sta": 24,
+         "hit": 1,
+         "crit": 1,
+         "arp": 50,
+         "ac": 608,
+         "source": "LowerKara",
+         "phase": 7,
+         "id": 4237234678,
+      },
+      {
          "name": "Blindfold of the Scarlet Marksman",
          "agi": 30,
          "sta": 16,
@@ -34,12 +46,12 @@ var gear = {
       },
       {
          "name": "Bloody Gladiator's Helm",
-         "str": 15,
-         "sta": 24,
+         "str": 11,
+         "sta": 30,
          "hit": 1,
          "crit": 1,
-         "ap": 30,
-         "ac": 658,
+         "ap": 18,
+         "ac": 683,
          "source": "PVP",
          "phase": 7,
          "id": 60365,
@@ -296,9 +308,10 @@ var gear = {
       },
       {
          "name": "Helm of Endless Rage",
-         "str": 26,
-         "sta": 29,
-         "agi": 26,
+         "str": 25,
+         "sta": 26,
+         "agi": 25,
+         "hit": 1,
          "ac": 679,
          "source": "BWL",
          "phase": 3,
@@ -357,10 +370,11 @@ var gear = {
       },
       {
          "name": "Lionheart Helm",
+         "sta": 18,
          "crit": 2,
-         "hit": 2,
-         "str": 18,
-         "ac": 565,
+         "hit": 1,
+         "ap": 24,
+         "ac": 665,
          "source": "Crafting",
          "phase": 1,
          "id": 12640
@@ -377,10 +391,9 @@ var gear = {
       },
       {
          "name": "R10 Plate Helm",
-         "crit": 1,
          "hit": 1,
-         "str": 21,
-         "sta": 24,
+         "str": 23,
+         "sta": 27,
          "ac": 598,
          "source": "PVP",
          "phase": 2,
@@ -450,6 +463,15 @@ var gear = {
    ],
    "neck": [
       {
+         "name": "Medallion of the Dawn",
+         "crit": 1,
+         "ap": 24,
+         "sta": 12,
+         "source": "Other",
+         "phase": 6,
+         "id": 22659
+      },
+      {
          "name": "Voidclaw Choker",
          "str": 14,
          "crit": 1,
@@ -460,9 +482,9 @@ var gear = {
       {
          "name": "Desert Wind Talisman",
          "crit": 1,
-         "haste": 2,
+         "haste": 1,
          "sta": 15,
-         "agi": 13,
+         "agi": 15,
          "source": "Ostarius",
          "phase": 7,
          "id": 83484
@@ -998,9 +1020,10 @@ var gear = {
       },
       {
          "name": "Sandstalker's Shroud",
-         "sta": 12,
-         "agi": 22,
+         "sta": 15,
+         "agi": 19,
          "hit": 1,
+         "arp": 50,
          "ac": 57,
          "source": "Ostarius",
          "phase": 7,
@@ -1510,10 +1533,10 @@ var gear = {
          "crit": 2,
          "str": 15,
          "sta": 25,
-         "dodge": 1,
+         "haste": 1,
          "ac": 197,
          "source": "Quest",
-         "phase": 7,
+         "phase": 1,
          "id": 12757
       },
       {
@@ -1610,9 +1633,9 @@ var gear = {
       {
          "name": "Ghoul Skin Tunic",
          "crit": 2,
-         "str": 40,
+         "str": 34,
          "sta": 22,
-         "ac": 411,
+         "ac": 369,
          "source": "Naxx",
          "phase": 6,
          "id": 23226
@@ -2053,7 +2076,7 @@ var gear = {
          "id": 60791,
       },
       {
-         "name": "Hateforge Grips",
+         "name": "Hateforge Grips (Used last 15 secs)",
          "str": 9,
          "sta": 7,
          "crit": 1,
@@ -2062,6 +2085,17 @@ var gear = {
          "source": "Crafting",
          "phase": 7,
          "id": 60577,
+      },
+      {
+         "name": "Hateforge Grips (Not used)",
+         "str": 9,
+         "sta": 7,
+         "crit": 1,
+         "haste": 1,
+         "ac": 173,
+         "source": "Crafting",
+         "phase": 7,
+         "id": 160577,
       },
       {
          "name": "Skulker's Gloves",
@@ -2799,6 +2833,29 @@ var gear = {
    ],
    "legs": [
       {
+         "name": "Kargron's Leggings",
+         "str": 9,
+         "agi": 11,
+         "hit": 1,
+         "parry": 2,
+         "ac": 169,
+         "source": "Unknown",
+         "phase": 7,
+         "id": 81365
+      },
+      {
+         "name": "Leggings of the Inferno",
+         "crit": 1,
+         "str": 18,
+         "sta": 18,
+         "agi": 18,
+         "haste": 1,
+         "ac": 169,
+         "source": "Unknown",
+         "phase": 7,
+         "id": 823467786234
+      },
+      {
          "name": "Ancient Jade Leggings",
          "str": 21,
          "skill": 8,
@@ -2854,18 +2911,18 @@ var gear = {
       {
          "name": "Baneforged Leggings",
          "str": 26,
-         "agi": 16,
-         "crit": 1,
+         "agi": 18,
          "ac": 582,
          "source": "Dungeon",
          "phase": 7,
          "id": 83466,
       },
       {
-         "name": "Deathrune Leggings",
+         "name": "Deathrune Leggings (vs Undead)",
          "str": 10,
          "agi": 10,
-         "crit": 2,
+         "crit": 1,
+         "ap": 45,
          "ac": 159,
          "source": "Dungeon",
          "phase": 7,
@@ -3059,9 +3116,10 @@ var gear = {
       },
       {
          "name": "Legguards of the Fallen Crusader",
-         "str": 28,
-         "sta": 22,
-         "agi": 22,
+         "str": 35,
+         "sta": 18,
+         "agi": 20,
+         "hit": 1,
          "ac": 740,
          "source": "BWL",
          "phase": 3,
@@ -3174,9 +3232,10 @@ var gear = {
       },
       {
          "name": "Titanic Leggings",
-         "crit": 1,
+         "str": 23,
+         "sta": 12,
          "hit": 2,
-         "str": 30,
+         "agi": 10,
          "ac": 598,
          "source": "Crafting",
          "phase": 5,
@@ -3193,6 +3252,16 @@ var gear = {
       },
    ],
    "feet": [
+      {
+         "name": "Boots of Displacement",
+         "agi": 30,
+         "sta": 21,
+         "haste": 2,
+         "ac": 166,
+         "source": "Naxx",
+         "phase": 6,
+         "id": 23073,
+      },
       {
          "name": "Sabatons of the Endless March",
          "str": 20,
@@ -3567,6 +3636,13 @@ var gear = {
    ],
    "finger1": [
       {
+         "name": "Band of the Old Horde",
+         "str": 20,
+         "source": "Other",
+         "phase": 7,
+         "id": 81367
+      },
+      {
          "name": "Ring of Tyvadrius",
          "agi": 18,
          "sta": 5,
@@ -3656,7 +3732,6 @@ var gear = {
       },
       {
          "name": "Band of Reanimation",
-         "sta": 22,
          "agi": 34,
          "source": "Naxx",
          "phase": "6",
@@ -3853,6 +3928,13 @@ var gear = {
    ],
    "finger2": [
       {
+         "name": "Band of the Old Horde",
+         "str": 20,
+         "source": "Other",
+         "phase": 7,
+         "id": 81367
+      },
+      {
          "name": "Ring of Tyvadrius",
          "agi": 18,
          "sta": 5,
@@ -3942,7 +4024,6 @@ var gear = {
       },
       {
          "name": "Band of Reanimation",
-         "sta": 22,
          "agi": 34,
          "source": "Naxx",
          "phase": "6",
@@ -4618,7 +4699,7 @@ var gear = {
          "name": "Soulstring",
          "crit": 1,
          "sta": 6,
-         "ap": 16,
+         "ap": 18,
          "source": "Naxx",
          "phase": "6",
          "id": 22811
@@ -4801,6 +4882,31 @@ var gear = {
       }
    ],
    "mainhand": [
+      {
+         "name": "Remnants of an Old God",
+         "mindmg": 126,
+         "maxdmg": 233,
+         "speed": 2.7,
+         "skill": 5,
+         "sta": 13,
+         "ap": 26,
+         "type": "Fist",
+         "source": "AQ40",
+         "phase": 7,
+         "id": 4278927894323479,
+         "Mainhand": true,
+      },
+      {
+         "name": "Coldheart Icicle",
+         "mindmg": 49,
+         "maxdmg": 92,
+         "speed": 1.7,
+         "arp": 75,
+         "type": "Dagger",
+         "source": "Other",
+         "phase": 7,
+         "id": 60806,
+      },
       {
          "name": "Wrench of Creation",
          "mindmg": 68,
@@ -5534,8 +5640,8 @@ var gear = {
          "hit": 1,
          "sta": 8,
          "agi": 8,
-         "mindmg": 83,
-         "maxdmg": 126,
+         "mindmg": 66,
+         "maxdmg": 124,
          "speed": 1.6,
          "type": "Dagger",
          "source": "Naxx",
@@ -5583,11 +5689,12 @@ var gear = {
       {
          "name": "Maexxna's Fang",
          "hit": 1,
-         "sta": 8,
-         "ap": 36,
-         "mindmg": 94,
-         "maxdmg": 141,
-         "speed": 1.8,
+         "str": 10,
+         "agi": 10,
+         "ap": 20,
+         "mindmg": 95,
+         "maxdmg": 127,
+         "speed": 1.7,
          "type": "Dagger",
          "source": "Naxx",
          "phase": 6,
@@ -5746,7 +5853,7 @@ var gear = {
          "id": 21673
       },
       {
-         "name": "Thekal's Grasp (1% chance on set)",
+         "name": "Thekal's Grasp (1% chance on set) (old dps)",
          "Mainhand": true,
          "crit": 1,
          "sta": 13,
@@ -5799,14 +5906,14 @@ var gear = {
          "id": 21268
       },
       {
-         "name": "Ebon Hand *Classic PPM",
+         "name": "Ebon Hand",
          "sta": 9,
          "mindmg": 90,
          "maxdmg": 168,
          "speed": 2.5,
          "type": "Mace",
          "source": "Crafting",
-         "ppm": 0.4,
+         "ppm": 0.8,
          "phase": 3,
          "id": 19170,
          "magicdmg": 220,
@@ -5880,8 +5987,8 @@ var gear = {
       },
       {
          "name": "Misplaced Servo Arm",
-         "mindmg": 128,
-         "maxdmg": 238,
+         "mindmg": 112,
+         "maxdmg": 221,
          "speed": 2.8,
          "type": "Mace",
          "source": "Naxx",
@@ -5961,9 +6068,9 @@ var gear = {
          "hit": 1,
          "sta": 9,
          "ap": 16,
-         "mindmg": 119,
-         "maxdmg": 221,
-         "speed": 2.6,
+         "mindmg": 128,
+         "maxdmg": 238,
+         "speed": 2.8,
          "type": "Mace",
          "source": "Naxx",
          "phase": 6,
@@ -5997,7 +6104,7 @@ var gear = {
       },
       {
          "name": "Blackguard",
-         "sta": 9,
+         "sta": 13,
          "parry": 1,
          "mindmg": 65,
          "maxdmg": 121,
@@ -6122,7 +6229,7 @@ var gear = {
          "id": 23054
       },
       {
-         "name": "Iblis, Blade of the Fallen Seraph",
+         "name": "Iblis, Blade of the Fallen Seraph (Pre-Buff Values)",
          "crit": 1,
          "hit": 1,
          "ap": 26,
@@ -6342,7 +6449,7 @@ var gear = {
          "id": 19865
       },
       {
-         "name": "Widow's Remorse",
+         "name": "Widow's Remorse (Pre-Buff Values)",
          "hit": 1,
          "sta": 17,
          "ac": 100,
@@ -6404,6 +6511,17 @@ var gear = {
       }
    ],
    "offhand": [
+      {
+         "name": "Coldheart Icicle",
+         "mindmg": 49,
+         "maxdmg": 92,
+         "speed": 1.7,
+         "arp": 75,
+         "type": "Dagger",
+         "source": "Other",
+         "phase": 7,
+         "id": 60806,
+      },
       {
          "name": "Wrench of Creation",
          "mindmg": 68,
@@ -6972,8 +7090,8 @@ var gear = {
          "hit": 1,
          "sta": 8,
          "agi": 8,
-         "mindmg": 83,
-         "maxdmg": 126,
+         "mindmg": 66,
+         "maxdmg": 124,
          "speed": 1.6,
          "type": "Dagger",
          "source": "Naxx",
@@ -7021,11 +7139,12 @@ var gear = {
       {
          "name": "Maexxna's Fang",
          "hit": 1,
-         "sta": 8,
-         "ap": 36,
-         "mindmg": 94,
-         "maxdmg": 141,
-         "speed": 1.8,
+         "str": 10,
+         "agi": 10,
+         "ap": 20,
+         "mindmg": 95,
+         "maxdmg": 127,
+         "speed": 1.7,
          "type": "Dagger",
          "source": "Naxx",
          "phase": 6,
@@ -7117,14 +7236,14 @@ var gear = {
          "id": 22377
       },
       {
-         "name": "Arlokk's Grasp (1% chance on set) *Classic PPM",
+         "name": "Arlokk's Grasp (1% chance on set) (old dps)",
          "offhand": true,
          "mindmg": 41,
          "maxdmg": 84,
          "speed": 1.5,
          "type": "Fist",
          "source": "ZG",
-         "ppm": 1,
+         "ppm": 4,
          "phase": 4,
          "id": 19910,
          "magicdmg": 77,
@@ -7211,14 +7330,14 @@ var gear = {
          "id": 21268
       },
       {
-         "name": "Ebon Hand *Classic PPM",
+         "name": "Ebon Hand",
          "sta": 9,
          "mindmg": 90,
          "maxdmg": 168,
          "speed": 2.5,
          "type": "Mace",
          "source": "Crafting",
-         "ppm": 0.4,
+         "ppm": 0.8,
          "phase": 3,
          "id": 19170,
          "magicdmg": 220,
@@ -7239,8 +7358,8 @@ var gear = {
       },
       {
          "name": "Misplaced Servo Arm",
-         "mindmg": 128,
-         "maxdmg": 238,
+         "mindmg": 112,
+         "maxdmg": 221,
          "speed": 2.8,
          "type": "Mace",
          "source": "Naxx",
@@ -7293,9 +7412,9 @@ var gear = {
          "hit": 1,
          "sta": 9,
          "ap": 16,
-         "mindmg": 119,
-         "maxdmg": 221,
-         "speed": 2.6,
+         "mindmg": 128,
+         "maxdmg": 238,
+         "speed": 2.8,
          "type": "Mace",
          "source": "Naxx",
          "phase": 6,
@@ -7414,7 +7533,7 @@ var gear = {
          "id": 23054
       },
       {
-         "name": "Iblis, Blade of the Fallen Seraph",
+         "name": "Iblis, Blade of the Fallen Seraph (Pre-Buff Values)",
          "crit": 1,
          "hit": 1,
          "ap": 26,
@@ -7581,7 +7700,7 @@ var gear = {
          "id": 19866
       },
       {
-         "name": "Widow's Remorse",
+         "name": "Widow's Remorse (Pre-Buff Values)",
          "hit": 1,
          "sta": 17,
          "ac": 100,
@@ -7655,6 +7774,32 @@ var gear = {
       }
    ],
    "twohand": [
+      {
+         "name": "Blade of the Blademaster",
+         "str": 17,
+         "sta": 12,
+         "crit": 2,
+         "dodge": 1,
+         "mindmg": 151,
+         "maxdmg": 234,
+         "speed": 2.9,
+         "id": 81369,
+         "source": "Other",
+         "phase": 7,
+         "type": "Polearm",
+      },
+      {
+         "name": "Bone Fracture",
+         "arp": 150,
+         "str": 13,
+         "mindmg": 103,
+         "maxdmg": 209,
+         "speed": 2.9,
+         "id": 60808,
+         "source": "Dungeon",
+         "phase": 7,
+         "type": "Sword",
+      },
       {
          "name": "Halberd of the Bronze Defender",
          "str": 24,
@@ -8005,9 +8150,9 @@ var gear = {
          "name": "Severance",
          "crit": 2,
          "str": 43,
-         "sta": 18,
-         "mindmg": 235,
-         "maxdmg": 354,
+         "sta": 20,
+         "mindmg": 242,
+         "maxdmg": 366,
          "speed": 3.6,
          "id": 22815,
          "source": "Naxx",
@@ -8195,7 +8340,7 @@ var gear = {
          "type": "Mace"
       },
       {
-         "name": "Sulfuras, Hand of Ragnaros *Classic PPM",
+         "name": "Sulfuras, Hand of Ragnaros",
          "str": 12,
          "sta": 12,
          "mindmg": 223,
@@ -8205,7 +8350,7 @@ var gear = {
          "source": "MC",
          "phase": 1,
          "type": "Mace",
-         "ppm": 0.7,
+         "ppm": 3,
          "magicdmg": 333,
          "procgcd": true
       },
@@ -8482,8 +8627,8 @@ var gear = {
          "name": "Claymore of Unholy Might",
          "sta": 20,
          "ap": 98,
-         "mindmg": 235,
-         "maxdmg": 354,
+         "mindmg": 242,
+         "maxdmg": 366,
          "speed": 3.6,
          "id": 22813,
          "source": "Naxx",
@@ -8757,6 +8902,11 @@ var gear = {
          "arp": 800
       },
       {
+         "id": 28,
+         "name": "+ 1600 ArP",
+         "arp": 1600
+      },
+      {
          "id": 10,
          "name": "+ 5 Strength",
          "str": 5
@@ -8940,6 +9090,13 @@ var enchant = {
          "phase": 1
       },
       {
+         "id": 100008349289234,
+         "spellid": true,
+         "name": "Major Strength",
+         "str": 9,
+         "phase": 7
+      },
+      {
          "id": 20013,
          "spellid": true,
          "name": "Greater Strength",
@@ -8952,6 +9109,20 @@ var enchant = {
          "name": "Minor Haste",
          "haste": 1,
          "phase": 1
+      },
+   ],
+   "waist": [
+      {
+         "id": 1000001,
+         "name": "Iron",
+         "arp": 25,
+         "phase": 7,
+      },
+      {
+         "id": 1000002,
+         "name": "Mithril",
+         "agi": 6,
+         "phase": 7,
       },
    ],
    "legs": [

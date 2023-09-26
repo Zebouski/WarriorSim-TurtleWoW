@@ -778,10 +778,7 @@ SIM.UI = {
             table += `<tr data-id="${item.id}" data-name="${item.name}" class="${item.selected ? 'active' : ''} ${item.hidden ? 'hidden' : ''}">
                         ${editmode ? '<td class="hide">' + (item.hidden ? eyesvghidden : eyesvg) + '</td>' : ''}
                         <td>`
-            if (item.phase <= 6)
-              table += `<a href="https://classic.wowhead.com/item=${tooltip}${rand}"></a>`
-            else
-              table += `<a href="https://database.turtle-wow.org/?item=${tooltip}${rand}"></a>`
+            table += `<a href="https://database.turtle-wow.org/?item=${tooltip}${rand}"></a>`
 
             table +=`${item.name}</td>
                         <td>${item.source}</td>
@@ -878,10 +875,7 @@ SIM.UI = {
             table += `<tr data-id="${item.id}" class="${item.selected ? 'active' : ''} ${item.hidden ? 'hidden' : ''}">
                         ${editmode ? '<td class="hide">' + (item.hidden ? eyesvghidden : eyesvg) + '</td>' : ''}
                         <td>`
-            if (item.phase <= 6)
-              table += `<a href="https://classic.wowhead.com/item=${tooltip}${rand}"></a>`
-            else
-              table += `<a href="https://database.turtle-wow.org/?item=${tooltip}${rand}"></a>`
+            table += `<a href="https://database.turtle-wow.org/?item=${tooltip}${rand}"></a>`
 
             table += `${item.name}</td>
                         <td>${item.source || ''}</td>
@@ -990,6 +984,7 @@ SIM.UI = {
                                 <th>Str</th>
                                 <th>Agi</th>
                                 <th>AP</th>
+                                <th>ArP</th>
                                 <th>Haste</th>
                                 <th>Crit</th>
                                 <th>Damage</th>
@@ -1008,10 +1003,11 @@ SIM.UI = {
 
             table += `<tr data-id="${item.id}" data-temp="${item.temp || false}" class="${item.selected ? 'active' : ''} ${item.hidden ? 'hidden' : ''}">
                         ${editmode ? '<td class="hide">' + (item.hidden ? eyesvghidden : eyesvg) + '</td>' : ''}
-                        <td><a href="https://classic.wowhead.com/${item.spellid ? 'spell' : 'item'}=${item.id}"></a>${item.name}</td>
+                        <td><a href="https://database.turtle-wow.org/?${item.spellid ? 'spell' : 'item'}=${item.id}"></a>${item.name}</td>
                         <td>${item.str || ''}</td>
                         <td>${item.agi || ''}</td>
                         <td>${item.ap || ''}</td>
+                        <td>${item.arp || ''}</td>
                         <td>${item.haste || ''}</td>
                         <td>${item.crit || ''}</td>
                         <td>${item.dmg || ''}</td>
