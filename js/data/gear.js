@@ -4414,6 +4414,17 @@ var gear = {
    ],
    "finger1": [
       {
+         "name": "Demon Watcher's Ring",
+         "source": "Other",
+         "subsource": "fire",
+         "resist": {
+             "shadow": 10,
+             "fire": 10,
+         },
+         "phase": 1,
+         "id": 83268,
+      },
+      {
          "name": "Prismatic Band of Fire Resistance",
          "source": "World Drop",
          "subsource": "fire",
@@ -4749,6 +4760,61 @@ var gear = {
       }
    ],
    "finger2": [
+      {
+         "name": "Demon Watcher's Ring",
+         "source": "Other",
+         "subsource": "fire",
+         "resist": {
+             "shadow": 10,
+             "fire": 10,
+         },
+         "phase": 1,
+         "id": 83268,
+      },
+      {
+         "name": "Prismatic Band of Fire Resistance",
+         "source": "World Drop",
+         "subsource": "fire",
+         "resist": {
+             "fire": 20,
+         },
+         "phase": 1,
+         "id": 12017,
+      },
+      {
+         "name": "Band of Icy Depths",
+         "source": "Quest",
+         "subsource": "frost",
+         "sta": 19,
+         "resist": {
+             "frost": 20,
+         },
+         "phase": 5,
+         "id": 21526,
+      },
+      {
+         "name": "Hailstone Band",
+         "source": "Naxx",
+         "subsource": "frost",
+         "sta": 18,
+         "dodge": 1,
+         "resist": {
+             "frost": 20,
+         },
+         "phase": 6,
+         "id": 23028,
+      },
+      {
+         "name": "Ramaladni's Icy Grasp",
+         "source": "Quest",
+         "subsource": "frost",
+         "sta": 15,
+         "resist": {
+             "frost": 25,
+         },
+         "phase": 6,
+         "id": 22707,
+      },
       {
          "name": "Band of the Old Horde",
          "str": 20,
@@ -5123,6 +5189,9 @@ var gear = {
          "name": "Corrosive Core",
          "arp": 75,
          "hit": 1,
+         "resist": {
+             "nature": 10,
+         },
          "source": "Dungeon",
          "phase": "7",
          "id": 80674
@@ -5270,6 +5339,61 @@ var gear = {
    ],
    "trinket2": [
       {
+         "name": "Blazing Emblem",
+         "source": "World Drop",
+         "subsource": "fire",
+         "resist": {
+             "fire": 15,
+         },
+         "phase": "1",
+         "id": 2802,
+      },
+      {
+         "name": "Loatheb's Reflection",
+         "source": "Naxx",
+         "subsource": "frost",
+         "resist": {
+             "shadow": 13,
+             "arcane": 13,
+             "nature": 13,
+             "fire": 13,
+             "frost": 13,
+         },
+         "phase": "6",
+         "id": 23042,
+      },
+      {
+         "name": "Gyrofreeze Ice Reflector",
+         "source": "Crafting",
+         "subsource": "frost",
+         "resist": {
+             "frost": 15,
+         },
+         "phase": "1",
+         "id": 18634,
+      },
+      {
+         "name": "Stormpike Insignia Rank 6",
+         "source": "PVP",
+         "subsource": "frost",
+         "dodge": 2,
+         "resist": {
+             "frost": 10,
+         },
+         "phase": "3",
+         "id": 17904,
+      },
+      {
+         "name": "Heart of Noxxion",
+         "source": "Dungeon",
+         "subsource": "nature",
+         "resist": {
+             "nature": 10,
+         },
+         "phase": "1",
+         "id": 17744,
+      },
+      {
          "name": "The Heart of Dreams",
          "haste": 2,
          "crit": 2,
@@ -5296,6 +5420,9 @@ var gear = {
          "name": "Corrosive Core",
          "arp": 75,
          "hit": 1,
+         "resist": {
+             "nature": 10,
+         },
          "source": "Dungeon",
          "phase": "7",
          "id": 80674,
