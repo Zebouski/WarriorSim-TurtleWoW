@@ -2147,19 +2147,6 @@ var gear = {
          "id": 17014,
       },
       {
-         "name": "Emberplate Armguards of the Bear",
-         "source": "Lord Incendius",
-         "ac": 261,
-         "subsource": "fire",
-         "str": 10,
-         "sta": 10,
-         "resist": {
-             "fire": 10,
-         },
-         "phase": 1,
-         "id": 11767,
-      },
-      {
          "name": "Emberplate Armguards of the Tiger",
          "source": "Lord Incendius",
          "ac": 261,
@@ -3946,32 +3933,6 @@ var gear = {
          },
          "phase": 1,
          "id": 16982,
-      },
-      {
-         "name": "Dark Iron Boots of the Monkey",
-         "source": "Crafted",
-         "ac": 664,
-         "sta": 11,
-         "agi": 11,
-         "subsource": "fire",
-         "resist": {
-             "fire": 28,
-         },
-         "phase": 1,
-         "id": 20039,
-      },
-      {
-         "name": "Dark Iron Boots of the Bear",
-         "source": "Crafted",
-         "ac": 664,
-         "sta": 11,
-         "str": 11,
-         "subsource": "fire",
-         "resist": {
-             "fire": 28,
-         },
-         "phase": 1,
-         "id": 20039,
       },
       {
          "name": "Dark Iron Boots of the Tiger",
