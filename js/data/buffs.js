@@ -136,7 +136,7 @@ var buffs = [
       group: "",
    },
    {
-      id: 21293,
+      id: 25359,
       spellid: true,
       name: "Grace of Air Totem",
       iconname: "spell_nature_invisibilitytotem",
@@ -184,7 +184,13 @@ var buffs = [
       spellid: true,
       name: "Orgrimmar Gift of Friendship",
       iconname: "inv_misc_gift_01",
-      group: "blasted",
+      agi: 30
+   },
+   {
+      id: 27666,
+      spellid: true,
+      name: "Darnassus Gift of Friendship",
+      iconname: "inv_misc_gift_02",
       agi: 30
    },
    {
