@@ -7868,6 +7868,18 @@ var gear = {
    ],
    "offhand": [
       {
+         "name": "Skycleaver",
+         "mindmg": 71,
+         "maxdmg": 135,
+         "hit": 1,
+         "crit": 1,
+         "speed": 2.3,
+         "source": "LowerKara",
+         "phase": 7,
+         "type": "Axe",
+         "id": 61452
+      },
+      {
          "name": "Anasterian's Legacy",
          "sta": 12,
          "agi": 12,
