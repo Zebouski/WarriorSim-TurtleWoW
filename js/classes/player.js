@@ -1562,7 +1562,7 @@ class Player {
         }
         if (this.auras.wreckingcrew) this.auras.wreckingcrew.use();
         if (this.overpowerrend && this.auras.rend && this.auras.rend.timer && spell instanceof Overpower) this.auras.rend.refresh();
-        if (spell instanceof Bloodthirst) {
+        if (this.mode == 'turtle' && spell instanceof Bloodthirst) {
             let enragechance = this.crit * 100;
             if (this.talents.enrage && rng10k() < enragechance) {
                 this.auras.enrage.use();
