@@ -19,7 +19,7 @@ nvm use 11.15.0
 npm run dev
 ```
 
-After making code changes and testing that they work, make sure to rebuild the dist/ files:
+After making code changes and testing that they work, make sure to rebuild the dist/ files and commit them as well:
 ```bash
 npm run dist
 git add .

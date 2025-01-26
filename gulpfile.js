@@ -5,10 +5,13 @@ var minify = require('gulp-minify');
 var rename = require('gulp-rename');
 var stripCode = require('gulp-strip-code');
 var browser = require('browser-sync').create();
+var fs = require('fs');
+
+const libFiles = ["js/**/*.js", ...(fs.existsSync('lib') ? ["lib/*.mjs"] : [])];
 
 gulp.task("js", function () {
     return gulp
-        .src(["js/**/*.js", "lib/*.mjs"])
+        .src(libFiles)
         .pipe(rename(function (path) {
             path.extname = ".min.js";
         }))
@@ -17,7 +20,7 @@ gulp.task("js", function () {
 
 gulp.task("js-build", function () {
     return gulp
-        .src(["js/**/*.js", "lib/*.mjs"])
+        .src(libFiles)
         // .pipe(stripCode({
         //     start_comment: "start-log",
         //     end_comment: "end-log"
