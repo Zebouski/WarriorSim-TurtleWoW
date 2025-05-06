@@ -1156,6 +1156,60 @@ class Player {
         if (this.auras.consumedrage && oldRage < 60 && this.rage >= 60)
             this.auras.consumedrage.use();
     }
+      // Using this as the best estimate for Turtle Rage gen -> https://www.desmos.com/calculator/aglbbabrg2
+    // Update these formulas if a better estimate is found
+    addRagemh(dmg, result, weapon, spell) {
+        let oldRage = this.rage;
+        if (!spell || spell instanceof HeroicStrike || spell instanceof Cleave) {
+            if (result != RESULT.MISS && result != RESULT.DODGE && this.talents.umbridledwrath && rng10k() < this.talents.umbridledwrath * 100) {
+                this.rage += 1;
+                if (this.mode == 'turtle' && weapon.twohand) this.rage += 1;
+                /* start-log */ if (this.logging) this.log(`Unbridled Wrath rage ${Math.floor(oldRage)} -> ${Math.floor(this.rage)}`); /* end-log */
+            }
+        }
+        if (spell) {
+            if (spell instanceof Execute) spell.result = result;
+            if (result == RESULT.MISS || result == RESULT.DODGE) {
+                this.rage += spell.refund ? spell.cost * 0.8 : 0;
+                oldRage += (spell.cost || 0) + (spell.usedrage || 0); // prevent cbr proccing on refunds
+            }
+            if (result == RESULT.MISS && this.altmightthreeset) {
+                this.rage += 15;
+            }
+        }
+        else {
+            if (result == RESULT.DODGE) {
+                this.rage += (weapon.avgdmg() / this.rageconversion) * 7.5 * 0.75;
+            }
+            else if (result != RESULT.MISS && result != RESULT.CRIT) {
+                this.rage += ((((dmg / this.rageconversion) * 7.5) / 1.075) + ((this.mh.speed * 3.5) / 2.25));
+            }
+            else if (result == RESULT.CRIT) {
+                this.rage += ((((dmg / this.rageconversion) * 7.5) / 1.075) + ((this.mh.speed * 7.5) / 2.25));
+            }
+        }
+        if (this.rage > this.ragecap) this.rage = this.ragecap;
+    }
+
+    addRageoh(dmg, result, weapon, spell) {
+        let oldRage = this.rage;
+        if (!spell) {
+            if (result != RESULT.MISS && result != RESULT.DODGE && this.talents.umbridledwrath && rng10k() < this.talents.umbridledwrath * 100) {
+                this.rage += 1;
+                /* start-log */ if (this.logging) this.log(`Unbridled Wrath rage ${Math.floor(oldRage)} -> ${Math.floor(this.rage)}`); /* end-log */
+            }
+        }
+        if (result == RESULT.DODGE) {
+            this.rage += (weapon.avgdmg() / this.rageconversion) * 7.5 * 0.75;
+        }
+        else if (result != RESULT.MISS && result != RESULT.CRIT) {
+            this.rage += ((((dmg / this.rageconversion) * 7.5) / 1.075) + ((this.oh.speed * 1.75) / 2.4));
+        }
+        else if (result == RESULT.CRIT) {
+            this.rage += ((((dmg / this.rageconversion) * 7.5) / 1.075) + ((this.oh.speed * 3.5) / 2.25));
+        }
+        if (this.rage > this.ragecap) this.rage = this.ragecap;
+    }
     steptimer(a) {
         if (this.timer <= a) {
             this.timer = 0;
@@ -1600,6 +1654,44 @@ class Player {
         else {
             if (!adjacent) this.addRage(dmg, result, weapon, spell);
             return 0;
+        }
+    }
+    dealdamage(dmg, result, weapon, spell, adjacent) {
+        if (this.mode !='turtle' ){
+            if (result != RESULT.MISS && result != RESULT.DODGE) {
+                if(spell == null || spell.school == SCHOOL.PHYSICAL)
+                    dmg *= (1 - this.armorReduction);
+                if (!adjacent) this.addRage(dmg, result, weapon, spell);
+                return dmg;
+            }
+            else {
+                if (!adjacent) this.addRage(dmg, result, weapon, spell);
+                return 0;
+            }
+        }
+        else if (weapon == this.mh){
+            if (result != RESULT.MISS && result != RESULT.DODGE) {
+                if(spell == null || spell.school == SCHOOL.PHYSICAL)
+                    dmg *= (1 - this.armorReduction);
+                if (!adjacent) this.addRagemh(dmg, result, weapon, spell);
+                return dmg;
+            }
+            else {
+                if (!adjacent) this.addRagemh(dmg, result, weapon, spell);
+                return 0;
+            }
+        }
+        else {
+            if (result != RESULT.MISS && result != RESULT.DODGE) {
+                if(spell == null || spell.school == SCHOOL.PHYSICAL)
+                    dmg *= (1 - this.armorReduction);
+                if (!adjacent) this.addRageoh(dmg, result, weapon, spell);
+                return dmg;
+            }
+            else {
+                if (!adjacent) this.addRageoh(dmg, result, weapon, spell);
+                return 0;
+            }
         }
     }
     proccrit(offhand, adjacent, spell) {
