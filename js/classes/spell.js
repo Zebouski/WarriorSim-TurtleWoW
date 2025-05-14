@@ -3327,3 +3327,27 @@ class ObsidianHaste extends Aura {
         this.name = 'Obsidian Haste';
     }
 }
+
+class Shieldrender extends Aura {
+    constructor(player, id) {
+        super(player, id);
+        this.duration = 3;
+        this.chance = 700;
+    }
+    use() {
+        if (this.timer) this.uptime += (step - this.starttimer);
+        this.timer = step + this.duration * 1000;
+        this.starttimer = step;
+        this.player.updateArmorReduction();
+        /* start-log */ if (this.player.logging) this.player.log(`${this.name} applied`); /* end-log */
+    }
+    step() {
+        if (step >= this.timer) {
+            this.uptime += (this.timer - this.starttimer);
+            this.timer = 0;
+            this.firstuse = false;
+            this.player.updateArmorReduction();
+            /* start-log */ if (this.player.logging) this.player.log(`${this.name} removed`); /* end-log */
+        }
+    }
+}

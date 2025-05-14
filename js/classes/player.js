@@ -184,6 +184,7 @@ class Player {
             for (let i = 2; i <= (this.adjacent + 1); i++)
                 this.auras['potentvenoms' + i] = new PotentVenoms(this, null, i);
         }
+        if (this.items.includes(55131)) this.auras.shieldrender = new Shieldrender(this);
         if (this.spells.shieldslam) this.auras.defendersresolve = new DefendersResolve(this);
 
         if ((this.basestance == 'def' || this.basestance == 'glad') && this.spells.sunderarmor && this.devastate && this.shield) {
@@ -1040,6 +1041,8 @@ class Player {
             this.target.armor = Math.max(this.target.armor - (this.auras.bonereaver.stacks * this.auras.bonereaver.armor), 0);
         if (this.auras.swarmguard && this.auras.swarmguard.timer)
             this.target.armor = Math.max(this.target.armor - (this.auras.swarmguard.stacks * this.auras.swarmguard.armor), 0);
+        if (this.auras.shieldrender && this.auras.shieldrender.timer)
+            this.target.armor = 0;
         this.armorReduction = this.getArmorReduction();
         this.arpContribution = this.getArpContribution();
     }
@@ -1263,6 +1266,7 @@ class Player {
         if (this.auras.grilekguard && this.auras.grilekguard.timer) this.auras.grilekguard.step();
         if (this.auras.obsidianhaste && this.auras.obsidianhaste.timer) this.auras.obsidianhaste.step();
         if (this.auras.obsidianstrength && this.auras.obsidianstrength.timer) this.auras.obsidianstrength.step();
+        if (this.auras.shieldrender && this.auras.shieldrender.timer) this.auras.shieldrender.step();
 
         if (this.mh.windfury && this.mh.windfury.timer) this.mh.windfury.step();
         if (this.trinketproc1 && this.trinketproc1.spell && this.trinketproc1.spell.timer) this.trinketproc1.spell.step();
@@ -1341,6 +1345,7 @@ class Player {
         if (this.auras.grilekguard && this.auras.grilekguard.timer) this.auras.grilekguard.end();
         if (this.auras.obsidianhaste && this.auras.obsidianhaste.timer) this.auras.obsidianhaste.end();
         if (this.auras.obsidianstrength && this.auras.obsidianstrength.timer) this.auras.obsidianstrength.end();
+        if (this.auras.shieldrender && this.auras.shieldrender.timer) this.auras.shieldrender.end();
 
         if (this.mh.windfury && this.mh.windfury.timer) this.mh.windfury.end();
         if (this.trinketproc1 && this.trinketproc1.spell && this.trinketproc1.spell.timer) this.trinketproc1.spell.end();
@@ -1784,6 +1789,9 @@ class Player {
             }
             if (this.auras.relentlessstrength && this.auras.relentlessstrength.timer) {
                 this.auras.relentlessstrength.proc();
+            }
+            if (this.auras.shieldrender && rng10k() < this.auras.shieldrender.chance) {
+                this.auras.shieldrender.use();
             }
             if (this.dragonbreath && rng10k() < 500) {
                 procdmg += this.magicproc({ magicdmg: 60, coeff: 1 });
